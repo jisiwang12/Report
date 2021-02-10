@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://10.86.36.28:1433;database=Meeting
+    druid:
+      max-active: 100
+      username: sa
+      password: 123
