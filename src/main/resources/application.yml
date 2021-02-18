@@ -7,3 +7,9 @@ spring:
       max-active: 100
       username: sa
       password: 123
+logging:
+  level:
+    com.example.demospring.dao: debug
+
+
+

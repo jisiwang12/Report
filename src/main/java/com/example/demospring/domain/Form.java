@@ -7,7 +7,24 @@ public class Form {
     private String orderNumber;
     private String lineNumber;
     private String nh;
-    private String expr1;
+    private String itemNumber;
+    private String 开始日期;
+
+    public String get开始日期() {
+        return 开始日期;
+    }
+
+    public void set开始日期(String 开始日期) {
+        this.开始日期 = 开始日期;
+    }
+
+    public String getItemNumber() {
+        return itemNumber;
+    }
+
+    public void setItemNumber(String itemNumber) {
+        this.itemNumber = itemNumber;
+    }
 
     public String getOrderNumber() {
         return orderNumber;

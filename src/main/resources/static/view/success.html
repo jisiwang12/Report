@@ -1,10 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+    <title>FineReport Demo</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+
+    <script type="text/javascript" src="http://localhost:8075/WebReport/ReportServer?op=emb&amp;resource=finereport.js&amp;inter=zh_CN&amp;__fr_locale__=&amp;__v__=2017.03.07.18.44.29.18&amp;jsVersion=1"></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8075/WebReport/ReportServer?op=emb&amp;resource=finereport.css&amp;cssVersion=1">
+
+    <script type='text/javascript'>
+
+        function doPrint() {
+
+            var url = "http://localhost:8075/WebReport/ReportServer?reportlet=SX.cpt";
+
+            //url += document.report.cpt.value;
+
+            var isPopUp = false;
+
+            var config = {url: url, isPopUp: isPopUp}
+
+            FR.doURLPDFPrint(config);
+
+            //FR.doURLPDFPrint(url,false);
+
+        }
+
+    </script>
+
 </head>
+
 <body>
-<p style="text-align: center">登陆成功</p>
+
+<form name="report">
+
+    <input id="cpt" type="checkbox" value="SX"/>SX.cpt<br>
+
+</form>
+
+<input type=button name=doprint onclick=doPrint() value='doPrint'></input>
+
 </body>
+
 </html>

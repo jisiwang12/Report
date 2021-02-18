@@ -7,6 +7,7 @@ import java.util.List;
 /**
  * @author diao 2021/2/10
  */
+
 public interface FormService {
-    public List<Form> findAll();
+    public List<Form> findAll(String startTime,String endTime,String orderNumber,String lineNumber);
 }
